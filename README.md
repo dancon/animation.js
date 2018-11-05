@@ -1,0 +1,2 @@
+# animate
+Javascript animate library
