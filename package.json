@@ -1,0 +1,23 @@
+{
+  "name": "animation.js",
+  "version": "0.0.1",
+  "description": "Javascript animation library base on requestAnimationFrame",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dancon/animation.js.git"
+  },
+  "keywords": [
+    "animation",
+    "requestAnimationFrame"
+  ],
+  "author": "sizhao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dancon/animation.js/issues"
+  },
+  "homepage": "https://github.com/dancon/animation.js#readme"
+}
