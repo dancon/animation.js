@@ -1,0 +1,17 @@
+{
+  "packages": [
+    "packages/*"
+  ],
+  "version": "independent",
+  "command": {
+    "publish": {
+      "ignoreChanges": [
+        ".gitignore",
+        "*.md"
+      ]
+    },
+    "bootstrap": {
+      "ignore": []
+    }
+  }
+}
