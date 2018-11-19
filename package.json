@@ -22,6 +22,8 @@
   },
   "homepage": "https://github.com/dancon/animation.js#readme",
   "devDependencies": {
-    "lerna": "^3.4.3"
+    "eslint": "^5.9.0",
+    "lerna": "^3.4.3",
+    "webpack": "^4.25.1"
   }
 }

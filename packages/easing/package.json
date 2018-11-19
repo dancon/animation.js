@@ -1,0 +1,16 @@
+{
+  "name": "@pandolajs/easing",
+  "version": "1.0.0",
+  "description": "This is a grab-bag of Robert Penner's easing equations.",
+  "main": "lib/index.js",
+  "module": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "jquery",
+    "easing"
+  ],
+  "author": "sizhao",
+  "license": "ISC"
+}

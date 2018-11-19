@@ -1,0 +1,19 @@
+{
+  "name": "@pandolajs/animationframe",
+  "version": "1.0.0",
+  "description": "A window.requestAnimationFrame and window.cancelAnimationFrame compatible libaray.",
+  "main": "lib/index.js",
+  "module": "src/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "requestAnimationFrame",
+    "cancelAnimationFrame"
+  ],
+  "author": "sizhao",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}
