@@ -1,6 +1,6 @@
 {
   "name": "@pandolajs/animation",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "A lightweight animation javascript libaray based on requestAnimationFrame",
   "main": "lib/index.js",
   "module": "src/index.js",

@@ -1,6 +1,6 @@
 {
   "name": "@pandolajs/easing",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "This is a grab-bag of Robert Penner's easing equations.",
   "main": "lib/index.js",
   "module": "src/index.js",
