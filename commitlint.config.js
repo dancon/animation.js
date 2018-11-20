@@ -16,6 +16,7 @@ module.exports = {
         'fix',
         'chore',
         'docs',
+        'build',
         'style',
         'refactor',
         'test'
