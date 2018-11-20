@@ -14,10 +14,17 @@ const initTimestamp = Date.now()
 animationFrame.raf = w.requestAnimationFrame || w.webkitRequestAnimationFrame
 animationFrame.caf = w.cancelAnimationFrame || w.webkitCancelAnimationFrame || w.webkitCancelRequestAnimationFrame
 
+function highResTimestamp () {
+  if (isDHRTSSuport) {
+    return w.performance.now()
+  }
+  return Date.now() - initTimestamp
+}
+
 if (!animationFrame.raf) {
   animationFrame.raf = (callback = () => {}) => {
     return setTimeout(() => {
-      callback(isDHRTSSuport ? w.performance.now() : Date.now() - initTimestamp)
+      callback(highResTimestamp())
     }, screenRepaintInterval)
   }
 }
@@ -34,5 +41,6 @@ export default {
   },
   caf (requestId) {
     animationFrame.caf.call(w, requestId)
-  }
+  },
+  highResTimestamp
 }
