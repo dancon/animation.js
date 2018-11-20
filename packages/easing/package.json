@@ -11,6 +11,10 @@
     "jquery",
     "easing"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "sizhao",
-  "license": "ISC"
+  "license": "ISC",
+  "gitHead": "882fe423e87e0cbef065216f5929ac30bd4a19d7"
 }
