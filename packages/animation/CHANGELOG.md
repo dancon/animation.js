@@ -6,19 +6,3 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 # 1.0.0 (2018-11-20)
 
 **Note:** Version bump only for package @pandolajs/animation
-
-
-
-
-
-# [1.0.0](https://github.com/dancon/animation.js/compare/@pandolajs/animation@1.0.0...@pandolajs/animation@1.0.0) (2018-11-20)
-
-**Note:** Version bump only for package @pandolajs/animation
-
-
-
-
-
-# 1.0.0 (2018-11-20)
-
-**Note:** Version bump only for package @pandolajs/animation
