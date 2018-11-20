@@ -5,12 +5,16 @@
  */
 
 import animationFram from 'packages/animationFram'
-import easing from 'packages/easing'
+import tween from 'packages/easing'
+
+function isFunction (func) {
+  return typeof func === 'function'
+}
 
 const DEFAULT = {
   duration: 400,
   delay: 0,
-  easing: easing.easeOutQuad,
+  easing: tween.easeOutQuad,
   onStart: () => {},
   onStep: () => {},
   onComplete: () => {}
@@ -22,14 +26,14 @@ const ANIMATIONSTATE = {
   STOPED: 'stoped'
 }
 class Animation {
-  constructor({
+  constructor ({
     duration = DEFAULT.duration,
     delay = DEFAULT.delay,
     easing = DEFAULT.easing,
     onStart = DEFAULT.onStart,
     onStep = DEFAULT.onStep,
     onComplete = DEFAULT.onComplete
-  } = DEFAULT){
+  } = DEFAULT) {
     // optional params
     this.duration = isNaN(parseInt(duration)) ? DEFAULT.duration : duration
     this.delay = isNaN(parseInt(delay)) ? DEFAULT.delay : delay
@@ -115,17 +119,17 @@ class Animation {
   }
 }
 
-export Animation
+export { Animation }
 
 export default (...args) => {
-  if(args.length < 1){
+  if (args.length < 1) {
     throw new Error('[Animation Exception]: No arguments.')
-  }else{
+  } else {
     let options = {}
     options = args.length === 1 ? args.pop() : Object.assign(options, {
       duration: args[0],
       onStep: args[1],
-      onComplete: args[2]
+      onComplete: args[2],
       easing: args[3]
     })
 

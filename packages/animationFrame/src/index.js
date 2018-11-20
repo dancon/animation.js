@@ -7,7 +7,7 @@
 const w = window
 const animationFrame = {}
 
-const screenRepaintInterval = 1000/60
+const screenRepaintInterval = 1000 / 60
 const isDHRTSSuport = w.performance && typeof w.performance.now === 'function'
 const initTimestamp = Date.now()
 
