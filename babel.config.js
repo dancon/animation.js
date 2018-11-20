@@ -4,7 +4,9 @@
  * @version 1.0.0 | 2018-11-16 | sizhao     // initial version
  */
 
-module.exports = function () {
+module.exports = function (api) {
+  api.cache(true)
+  
   const presets = [
     ['@babel/preset-env', {
       useBuiltIns: 'usage',

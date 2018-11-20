@@ -4,7 +4,7 @@
  * @version 1.0.0 | 2018-11-16 | sizhao     // initial version
  */
 
-import animationFram from 'packages/animationFram'
+import animationFram from 'packages/animationFrame'
 import tween from 'packages/easing'
 
 function isFunction (func) {
