@@ -13,6 +13,7 @@ module.exports = merge(baseConfig, {
   context: __dirname,
   output: {
     path: `${__dirname}/lib`,
-    library: name
+    library: '',
+    libraryExport: ''
   }
 })

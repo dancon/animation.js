@@ -14,5 +14,9 @@
   "license": "MIT",
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "@pandolajs/animationframe": "^1.0.0",
+    "@pandolajs/easing": "^1.0.0"
   }
 }

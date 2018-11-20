@@ -37,10 +37,10 @@ if (!animationFrame.caf) {
 
 export default {
   raf (callback) {
-    animationFrame.raf.call(w, callback)
+    return animationFrame.raf.call(w, callback)
   },
   caf (requestId) {
-    animationFrame.caf.call(w, requestId)
+    return animationFrame.caf.call(w, requestId)
   },
   highResTimestamp
 }

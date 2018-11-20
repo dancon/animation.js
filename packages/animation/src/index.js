@@ -4,8 +4,8 @@
  * @version 1.0.0 | 2018-11-16 | sizhao     // initial version
  */
 
-import animationFram from 'packages/animationFrame'
-import tween from 'packages/easing'
+import animationFram from '@pandolajs/animationframe'
+import tween from '@pandolajs/easing'
 
 function isFunction (func) {
   return typeof func === 'function'
@@ -55,6 +55,7 @@ class Animation {
   stop () {
     this._reset()
     animationFram.caf(this.rafid)
+    this.onStep(1)
     this.onComplete(1)
   }
 
@@ -119,9 +120,7 @@ class Animation {
   }
 }
 
-export { Animation }
-
-export default (...args) => {
+const animation = (...args) => {
   if (args.length < 1) {
     throw new Error('[Animation Exception]: No arguments.')
   } else {
@@ -136,3 +135,7 @@ export default (...args) => {
     return new Animation(options)
   }
 }
+
+export { Animation, animation }
+
+export default animation

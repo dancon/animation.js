@@ -15,11 +15,12 @@ module.exports = {
   entry: './src/index.js',
   output: {
     filename: 'index.js',
-    libraryTarget: 'umd'
+    libraryTarget: 'umd',
+    libraryExport: 'default'
   },
   resolve: {
     alias: {
-      packages: packagesPath
+      '@pandolajs': packagesPath
     },
     aliasFields: [ 'module' ],
     mainFields: [ 'module', 'main' ]
